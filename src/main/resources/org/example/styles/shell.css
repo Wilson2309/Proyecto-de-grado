@@ -1,0 +1,48 @@
+/* Shell layout — OptiScan Pro */
+
+.shell-header {
+    -fx-background-color: #1e293b;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 8, 0, 0, 2);
+}
+
+.shell-title {
+    -fx-text-fill: #f8fafc;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.shell-sidebar {
+    -fx-background-color: #f1f5f9;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 0 1 0 0;
+    -fx-min-width: 180px;
+    -fx-pref-width: 200px;
+}
+
+.shell-nav-button {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 10 14 10 14;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+}
+
+.shell-nav-button:hover {
+    -fx-background-color: #e2e8f0;
+    -fx-border-color: #cbd5e1;
+}
+
+.shell-nav-button:pressed {
+    -fx-background-color: #cbd5e1;
+}
+
+.shell-content {
+    -fx-background-color: #ffffff;
+}
+
+.shell-content-label {
+    -fx-text-fill: #334155;
+    -fx-font-size: 16px;
+}
