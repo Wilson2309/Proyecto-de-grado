@@ -16,7 +16,6 @@
             prefWidth="960.0"
             stylesheets="@/org/example/styles/shell.css">
 
-    <!-- HEADER -->
     <top>
         <HBox fx:id="headerBar"
               alignment="CENTER_LEFT"
@@ -32,7 +31,6 @@
         </HBox>
     </top>
 
-    <!-- SIDEBAR -->
     <left>
         <VBox fx:id="sidebar"
               alignment="TOP_CENTER"
@@ -49,6 +47,18 @@
                     onAction="#goToDashboard"
                     styleClass="shell-nav-button"/>
 
+            <Button fx:id="programasButton"
+                    text="Programas"
+                    maxWidth="Infinity"
+                    onAction="#goToProgramas"
+                    styleClass="shell-nav-button"/>
+
+            <Button fx:id="historialButton"
+                    text="Historial"
+                    maxWidth="Infinity"
+                    onAction="#goToHistorial"
+                    styleClass="shell-nav-button"/>
+
             <Button fx:id="seguridadButton"
                     text="Seguridad"
                     maxWidth="Infinity"
@@ -63,7 +73,6 @@
         </VBox>
     </left>
 
-    <!-- CONTENIDO CENTRAL -->
     <center>
         <StackPane fx:id="contentArea"
                    styleClass="shell-content">

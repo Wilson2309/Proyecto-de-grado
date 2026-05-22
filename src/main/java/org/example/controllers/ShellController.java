@@ -86,3 +86,4 @@ public class ShellController {
         loadView("/org/example/views/LimpiezaView.fxml");
     }
 }
+

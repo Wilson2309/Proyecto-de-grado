@@ -10,16 +10,20 @@ import java.util.Objects;
 
 public class MainApp extends Application {
 
+    private static final String LOGIN_FXML = "/org/example/views/LoginView.fxml";
+    private static final double LOGIN_WIDTH = 480;
+    private static final double LOGIN_HEIGHT = 640;
+
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader loader = new FXMLLoader(
                 Objects.requireNonNull(
-                        getClass().getResource("/org/example/views/ShellView.fxml"),
-                        "No se encontró ShellView.fxml en src/main/resources/org/example/views/"
+                        getClass().getResource(LOGIN_FXML),
+                        "No se encontró LoginView.fxml en src/main/resources/org/example/views/"
                 )
         );
 
-        Scene scene = new Scene(loader.load(), 960, 640);
+        Scene scene = new Scene(loader.load(), LOGIN_WIDTH, LOGIN_HEIGHT);
 
         stage.setTitle("OptiScan Pro");
         stage.setScene(scene);
@@ -30,3 +34,4 @@ public class MainApp extends Application {
         launch(args);
     }
 }
+
