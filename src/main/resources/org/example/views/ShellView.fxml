@@ -49,6 +49,18 @@
                     onAction="#goToDashboard"
                     styleClass="shell-nav-button"/>
 
+            <Button fx:id="programasButton"
+                    text="Programas"
+                    maxWidth="Infinity"
+                    onAction="#goToProgramas"
+                    styleClass="shell-nav-button"/>
+
+            <Button fx:id="historialButton"
+                    text="Historial"
+                    maxWidth="Infinity"
+                    onAction="#goToHistorial"
+                    styleClass="shell-nav-button"/>
+
             <Button fx:id="seguridadButton"
                     text="Seguridad"
                     maxWidth="Infinity"

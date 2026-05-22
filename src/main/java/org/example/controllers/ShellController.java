@@ -34,6 +34,12 @@ public class ShellController {
     private Button dashboardButton;
 
     @FXML
+    private Button programasButton;
+
+    @FXML
+    private Button historialButton;
+
+    @FXML
     private Button seguridadButton;
 
     @FXML
@@ -74,6 +80,16 @@ public class ShellController {
     @FXML
     private void goToDashboard() {
         loadView("/org/example/views/DashboardView.fxml");
+    }
+
+    @FXML
+    private void goToProgramas() {
+        loadView("/org/example/views/ProgramasView.fxml");
+    }
+
+    @FXML
+    private void goToHistorial() {
+        loadView("/org/example/views/HistorialView.fxml");
     }
 
     @FXML
